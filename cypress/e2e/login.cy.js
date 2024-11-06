@@ -9,7 +9,7 @@ describe('login', () => {
     cy.xpath('//button[text()="Log in"]').click()
     cy.wait(5000)
     cy.xpath('//a[@id="logout2"]').should('exist')
-    cy.xpath('//a[@id="nameofuser"]').should('exist')
+    cy.xpath('//a[@id="nameofuser"]').should('contain', 'Welcome defg')
   }),
   it('with invalid credential', () => {
     cy.visit('https://www.demoblaze.com/index.html')
