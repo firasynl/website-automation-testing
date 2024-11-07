@@ -1,5 +1,5 @@
 module.exports = {
     datatestid: {
-        addToCartButton: '//button[text()="Cart"]'
+        addToCartButton: '//a[text()="Add to cart"]'
     }
 }

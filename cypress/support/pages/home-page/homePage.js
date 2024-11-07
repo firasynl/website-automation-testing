@@ -13,6 +13,10 @@ class HomePage{
     clickCartMenu(){
         cy.xpath(homeLocators.datatestid.cartMenu).click()
     }
+    clickProduct(nameproduct){
+        cy.xpath(homeLocators.datatestid.productDetail).contains(nameproduct).click()
+        cy.wait(3000)
+    }
 }
 
 module.exports = new HomePage();

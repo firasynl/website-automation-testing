@@ -6,6 +6,7 @@ module.exports = {
         inputCreditCard: '//input[@id="card"]',
         inputMonth: '//input[@id="month"]',
         inputYear: '//input[@id="year"]',
-        purchaseButton: '//button[text()="Purchase"]'
+        purchaseButton: '//button[text()="Purchase"]',
+        alertOrderSuccess: '//h2[text()="Thank you for your purchase!"]'
     }
 }
