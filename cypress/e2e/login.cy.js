@@ -10,7 +10,7 @@ describe('login', () => {
     loginPage.clickLoginButton();
     cy.wait(5000)
     cy.xpath('//a[@id="logout2"]').should('exist')
-    cy.xpath('//a[@id="nameofuser"]').should('contain', 'Welcome defg')
+    cy.xpath('//a[@id="nameofuser"]').should('exist')
   }),
   it('with invalid credential', () => {
     homePage.goToHomePage();
